@@ -11,9 +11,9 @@ Una solución automatizada, elegante y simplificada basada en **RVC v2 (Retrieva
 
 ## 🚀 Inicio Rápido
 
-No necesitas instalar nada en tu computadora. Todo el procesamiento pesado se realiza utilizando las GPUs de Google. Haz clic en el siguiente botón para abrir el entorno de ejecución:
+No necesitas instalar nada en tu computadora. Todo el procesamiento pesado se realiza utilizando las GPUs gratuitas de Google. Haz clic en el siguiente botón para abrir el entorno de ejecución:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](AQUÍ_VA_EL_ENLACE_DE_TU_CUADERNO)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PjQ9YNiJDN0RXlWj-ucu-oY7ypogldn7#scrollTo=yf6oTHpiGEU8)
 
 ---
 
@@ -36,9 +36,11 @@ El cuaderno está diseñado con una interfaz minimalista (Formularios de Colab) 
 ### Paso 1: Inicialización del Entorno
 Ejecuta la primera celda para clonar el repositorio principal de RVC, instalar todas las dependencias necesarias y descargar los pesos de los modelos base (`Hubert`, `RMVPE`, etc.).
 
+![Paso 1 - Inicialización](data/01.png)
+
 > 💡 *Nota: El panel se mostrará limpio con las cajas de código colapsadas por defecto.*
 
-![Paso 1 - Inicialización](AQUÍ_SUBES_LA_IMAGEN_DE_TU_PRIMER_BLOQUE)
+![Paso 1 - Inicialización](data/011.png)
 
 ### Paso 2: Creación del Espacio de Trabajo
 Presiona 'Play' en la segunda celda para generar automáticamente el árbol de directorios dentro de Colab. Una vez creadas las carpetas, sube tus audios `.wav` a sus respectivos destinos utilizando el panel lateral izquierdo de Colab:
