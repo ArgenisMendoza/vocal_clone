@@ -1,4 +1,4 @@
-# 🎵 RVC Voice Cover Maker — Google Colab Pipeline
+# 🎵 Generador de Covers — Google Colab
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Colab](https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
@@ -11,7 +11,7 @@ Una solución automatizada, elegante y simplificada basada en **RVC v2 (Retrieva
 
 ## 🚀 Inicio Rápido
 
-No necesitas instalar nada en tu computadora. Todo el procesamiento pesado se realiza utilizando las GPUs gratuitas de Google. Haz clic en el siguiente botón para abrir el entorno de ejecución:
+No necesitas instalar nada en tu computadora. Todo el procesamiento pesado se realiza utilizando las GPUs gratuitas de Google. Haz clic en el siguiente botón para abrir el entorno de ejecución, el cuaderno de colab tiene instrucciones detalladas paso a paso, asegurate de no saltar nada para que funcione al 100%:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PjQ9YNiJDN0RXlWj-ucu-oY7ypogldn7#scrollTo=yf6oTHpiGEU8)
 
@@ -47,7 +47,11 @@ Presiona 'Play' en la segunda celda para generar automáticamente el árbol de d
 * Sube tu dataset a: `/content/dataset/`
 * Sube las pistas de la canción a: `/content/canciones/`
 
-![Paso 2 - Carpetas](AQUÍ_SUBES_LA_IMAGEN_DE_TU_SEGUNDO_BLOQUE)
+![Paso 2 - Carpetas](data/02.png)
+
+> 💡 *Nota: El panel se mostrará limpio con las cajas de código colapsadas por defecto.*
+
+![Paso 1 - Inicialización](data/022.png)
 
 ### Paso 3: Procesamiento del Dataset e Index
 Configura el nombre de tu modelo y ejecuta la celda de procesamiento. El script se encargará de:
@@ -55,28 +59,28 @@ Configura el nombre de tu modelo y ejecuta la celda de procesamiento. El script 
 2. Extraer las características de tono ($f_0$) en GPU usando el algoritmo avanzado **RMVPE**.
 3. Generar el archivo de similitud de voz `.index`.
 
-![Paso 3 - Procesamiento](AQUÍ_SUBES_LA_IMAGEN_DE_TU_TERCER_BLOQUE)
+![Paso 3 - Procesamiento](data/03.png)
 
 ### Paso 4: Entrenamiento de la IA
 Ajusta la cantidad de iteraciones (Épocas) basándote en la duración de tu audio gracias a la tabla de guía interactiva incluida. El sistema entrenará el archivo final `.pth` de manera óptima aprovechando la VRAM asignada.
 
-![Paso 4 - Entrenamiento](AQUÍ_SUBES_LA_IMAGEN_DE_TU_CUARTO_BLOQUE)
+![Paso 4 - Entrenamiento](data/04.png)
 
 ### Paso 5: Inferencia AI (Conversión de Voz)
 Escribe el nombre de la pista del cantante y ajusta el **Pitch Shift (Tono Vocal)** según el registro del artista original (Barítono, Tenor o Soprano) para garantizar que tu clon de voz no se distorsione en las notas difíciles.
 
-![Paso 5 - Inferencia](AQUÍ_SUBES_LA_IMAGEN_DE_TU_QUINTO_BLOQUE)
+![Paso 5 - Inferencia](data/05.png)
 
 ### Paso 6: Mezcla de Audio Profesional
 Ajusta los decibeles (`dB`) para que la potencia de tu voz clonada destaque correctamente y no quede opacada por la música. La librería `pydub` unirá ambas pistas de forma milimétrica.
 
-![Paso 6 - Mezcla](AQUÍ_SUBES_LA_IMAGEN_DE_TU_SEXTO_BLOQUE)
+![Paso 6 - Mezcla](data/06.png)
 
 ---
 
 ## 🎛️ Guía Rápida de Configuración de Pitch
 
-Para que tus covers suenen naturales, toma como referencia esta guía basada en tu rango vocal:
+Para que tus covers suenen naturales, toma como referencia esta guía basada en un hombre que tiene rango vocal de Tenor2:
 * **Mismo rango (ej. Creed, Nirvana):** Mantén el slider en `0`.
 * **Cantante más agudo (ej. Linkin Park, Pxndx):** Baja entre `-1` y `-3` semitonos.
 * **Canciones de mujeres (ej. Evanescence, Paramore):** Baja exactamente `-12` semitonos (una octava completa).
@@ -86,3 +90,4 @@ Para que tus covers suenen naturales, toma como referencia esta guía basada en 
 ## 📝 Licencia
 
 Este proyecto está bajo la Licencia MIT. Siéntete libre de clonarlo, modificarlo y compartirlo.
+
