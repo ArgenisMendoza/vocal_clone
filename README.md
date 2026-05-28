@@ -81,6 +81,9 @@ Ajusta los decibeles (`dB`) para que la potencia de tu voz clonada destaque corr
 ## 🎛️ Guía Rápida de Configuración de Pitch
 
 Para que tus covers suenen naturales, toma como referencia esta guía basada en un hombre que tiene rango vocal de Tenor2:
+
+> *ten en cuenta que cada valor corresponde a medio tono -1 = bajar medio tono*
+
 * **Mismo rango (ej. Creed, Nirvana):** Mantén el slider en `0`.
 * **Cantante más agudo (ej. Linkin Park, Pxndx):** Baja entre `-1` y `-3` semitonos.
 * **Canciones de mujeres (ej. Evanescence, Paramore):** Baja exactamente `-12` semitonos (una octava completa).
